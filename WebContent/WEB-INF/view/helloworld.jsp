@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html>
 
+<head>
+
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/resources/css/my-test.css">
+
+</head>
 <body>
+	<h2>Spring MVC Demo - Hello World of Spring!</h2>
+	<img
+		src="${pageContext.request.contextPath}/resources/images/spring-logo.png" />
 
-Hello World of Spring!
+	<br>
+	<br> Student name: ${param.studentName}
 
-<br><br>
-
-Student name: ${param.studentName}
-
-<br><br>
-
-The message: ${message}
+	<br>
+	<br> The message: ${message}
+	<br>
+	<br>
 
 </body>
 
