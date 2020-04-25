@@ -24,7 +24,7 @@ public class HelloWorldController {
 	public String processForm() {
 		return "helloworld";
 	}
-
+	
 	// new a controller method to read form data and
 	// add data to the model
 
@@ -46,13 +46,11 @@ public class HelloWorldController {
 		return "helloworld";
 	}
 	
-	
 	@RequestMapping("/processFormVersionThree")	
-	public String processFormVersionThree(@RequestParam("studentName") String theName, Model model) {
-		
-		// read the request parameter from the HTML form
-//		String theName = request.getParameter("studentName");
-		
+	public String processFormVersionThree(
+			@RequestParam("studentName") String theName, 
+			Model model) {
+				
 		// convert the data to all caps
 		theName = theName.toUpperCase();
 		
@@ -63,5 +61,14 @@ public class HelloWorldController {
 		model.addAttribute("message", result);
 				
 		return "helloworld";
-	}
+	}	
+	
+	
+	
 }
+
+
+
+
+
+

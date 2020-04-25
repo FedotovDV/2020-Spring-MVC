@@ -1,4 +1,7 @@
-<!DOCTYPE HTML>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
+<!DOCTYPE html>
+
 <html>
 <head>
 <link rel="stylesheet" type="text/css"
@@ -12,7 +15,8 @@
 
 	<br>
 
-	<br> The student is confirmed: ${student.firstName}  ${student.lastName}
+	<br> The student is confirmed: ${student.firstName}
+	${student.lastName}
 	<br>
 
 	<br> Country: ${student.country}
@@ -22,3 +26,9 @@
 
 </body>
 </html>
+
+
+
+
+
+
