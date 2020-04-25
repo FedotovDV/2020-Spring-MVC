@@ -24,12 +24,11 @@
 		<br>
 		
 		Country:
+		
 		<form:select path="country">
-			<form:option value="Great Britain" label="Great Britain" />
-			<form:option value="Germany" label="Germany" />
-			<form:option value="France" label="France" />
-			<form:option value="Russia" label="Russia" />
-			<form:option value="USA" label="USA" />
+		
+			<form:options items="${student.countryOptions}" />
+			
 		</form:select>
 		<br>
 		<br>
