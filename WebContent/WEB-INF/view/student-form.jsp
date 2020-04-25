@@ -1,4 +1,4 @@
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -22,10 +22,21 @@
 	    Last name:  <form:input path="lastName" />
 		<br>
 		<br>
+		
+		Country:
+		<form:select path="country">
+			<form:option value="Great Britain" label="Great Britain" />
+			<form:option value="Germany" label="Germany" />
+			<form:option value="France" label="France" />
+			<form:option value="Russia" label="Russia" />
+			<form:option value="USA" label="USA" />
+		</form:select>
+		<br>
+		<br>
 		<input type="submit" value="Submit" />
 		<br>
 		<br>
-		
+
 
 
 	</form:form>
