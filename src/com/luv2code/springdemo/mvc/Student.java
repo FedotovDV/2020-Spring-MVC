@@ -9,10 +9,22 @@ public class Student {
 	private String country;
 	private String favoriteLanguage;
 	private String[] operatingSystems;
-
+private LinkedHashMap<String, String> favoriteLanguageOptions;
+	
+	// create no-arg constructor
 	public Student() {
+		
+		// populate favorite language options
+		favoriteLanguageOptions = new LinkedHashMap<>();
 
+		// parameter order: value, display label
+		//
+		favoriteLanguageOptions.put("Java", "Java");
+		favoriteLanguageOptions.put("C#", "C#");
+		favoriteLanguageOptions.put("PHP", "PHP");
+		favoriteLanguageOptions.put("Ruby", "Ruby");		
 	}
+
 
 	public String getFirstName() {
 		return firstName;
@@ -52,6 +64,16 @@ public class Student {
 
 	public void setOperatingSystems(String[] operatingSystems) {
 		this.operatingSystems = operatingSystems;
+	}
+
+
+	public LinkedHashMap<String, String> getFavoriteLanguageOptions() {
+		return favoriteLanguageOptions;
+	}
+
+
+	public void setFavoriteLanguageOptions(LinkedHashMap<String, String> favoriteLanguageOptions) {
+		this.favoriteLanguageOptions = favoriteLanguageOptions;
 	}
 
 	
