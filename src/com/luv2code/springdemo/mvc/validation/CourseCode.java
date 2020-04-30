@@ -15,7 +15,7 @@ import javax.validation.Payload;
 @Target({ FIELD, METHOD })
 public @interface CourseCode {
 
-public String value() default "LUV";
+public String[] value() default {"LUV"};
 
 
 public String message() default "must start with LUV";
